@@ -18,15 +18,28 @@ const sumEvens = (arrNum) => {
   }
   return sum;
 }
- 
 console.log(sumEvens(arrNum));
 
 // ***************** FINISH THESE PRACTICE PROBLEMS!! ************************
 
 // Find the index of the first value when added to it's index = 512 (#ATX!!)
-const atxIdx;
+
+// Array.prototype.find()
+// Returns the found element in the array, if some element in the array satisfies the testing function, or undefined if not found.
+
+//  Array.prototype.findIndex()
+// Returns the found index in the array, if an element in the array satisfies the testing function, or -1 if not found.
+
+
+let value = arrNum.find()
+let index = arrNum.findIndex()
+
+const atxIdx = 
 
 console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
+
+
+//*******************
 
 const weather = [
   { id: 5743823523151872,
