@@ -20,7 +20,7 @@ const sumEvens = (arrNum) => {
 }
 console.log(sumEvens(arrNum));
 
-// ***************** FINISH THESE PRACTICE PROBLEMS!! ************************
+// ***************** FINISH THIS PRACTICE PROBLEM!! ************************
 
 // Find the index of the first value when added to it's index = 512 (#ATX!!)
 
@@ -31,12 +31,12 @@ console.log(sumEvens(arrNum));
 // Returns the found index in the array, if an element in the array satisfies the testing function, or -1 if not found.
 
 
-let value = arrNum.find()
-let index = arrNum.findIndex()
+// let value = arrNum.find()
+// let index = arrNum.findIndex()
 
-const atxIdx = 
+// const atxIdx = 
 
-console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
+// console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
 
 
 //*******************
@@ -108,11 +108,35 @@ const weather = [
   },
 ],
 
-//using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
-const weatherStates = 
-console.log(weatherStates)
+//using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. 
+//Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
+
+
+weatherStates = [...new Set(weather.map(item => item.weather_state_name))];
+console.log(weatherStates);
+
+
+// loop through array and filter out the "weatherStates"
+// then sort the weatherStates into their own array
+// console.log this new array
+// set and map() may work together?!
+
 
 //find the id of the object in weather that has a min_temp of 15.915
 
-const idealTemp =
-console.log(idealTemp)
+// const idealTemp = 
+// console.log(idealTemp)
+
+
+minTemps = [...new Set(weather.map(item => item.min_temp))];
+console.log(minTemps);
+
+console.log(minTemps.indexOf(15.915))
+
+
+// loop thorugh array
+// find object keys and values
+// key = min_tmep
+// value = 15.915
+// 
+// indexOf() ??
