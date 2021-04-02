@@ -33,8 +33,7 @@ console.log(sumEvens(arrNum));
 
 
 let atxIdx = arrNum.find(element => element + arrNum.indexOf(element) == 512);
-console.log(atxIdx)
-
+console.log("Number: " + atxIdx + " Index: " + arrNum.indexOf(atxIdx))
 
 
 // Array.prototype.find()
@@ -114,6 +113,7 @@ const weather = [
     predictability: 71
   },
 ],
+
 
 //using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. 
 //Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
