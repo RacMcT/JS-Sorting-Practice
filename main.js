@@ -24,6 +24,19 @@ console.log(sumEvens(arrNum));
 
 // Find the index of the first value when added to it's index = 512 (#ATX!!)
 
+// const atxIdx = 
+
+// console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
+
+// const foundNum = arrNum.find(element => element > 10);
+// const foundID = arrNum.findIndex((element) => element > 13);
+
+
+let atxIdx = arrNum.find(element => element + arrNum.indexOf(element) == 512);
+console.log(atxIdx)
+
+
+
 // Array.prototype.find()
 // Returns the found element in the array, if some element in the array satisfies the testing function, or undefined if not found.
 
@@ -33,12 +46,6 @@ console.log(sumEvens(arrNum));
 
 // let value = arrNum.find()
 // let index = arrNum.findIndex()
-
-// const atxIdx = 
-
-// console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
-
-
 //*******************
 
 const weather = [
